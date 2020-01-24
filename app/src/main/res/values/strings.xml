@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Sibola Admin</string>
+    <string name="password_hint">Password</string>
+    <string name="email_hint">Email</string>
+    <string name="username_hint">Username</string>
+    <string name="sign_in_button_label">Masuk</string>
+    <string name="user">User</string>
+    <string name="listBooking">List Booking</string>
+
+    <string name="home">Home</string>
+
+    <string name="action_signout">Keluar</string>
+    <string name="login_error_message">Email dan Password wajib diisi.</string>
+    <string name="login_error_title">Terjadi Kesalahan!</string>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/text_tanggal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toEndOf="@+id/icon_time"
+        android:gravity="center_vertical"
+        android:text="Tanggal"
+        android:textColor="@color/primary_text"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_jam"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/text_tanggal"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_toEndOf="@+id/icon_time"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Jam"
+        android:textColor="@color/secondary_text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_penyewa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/text_tanggal"
+        android:layout_alignParentEnd="true"
+        android:text="user"
+        android:textColor="@color/primary_text"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/icon_time"
+        android:layout_width="42dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:tint="@color/primary_light"
+        app:srcCompat="@drawable/ic_access_time_black_24dp" />
+
+    <ImageView
+        android:id="@+id/icon_person"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/text_jam"
+        android:layout_toStartOf="@+id/text_penyewa"
+        android:tint="@color/primary_light"
+        app:srcCompat="@drawable/ic_person_black_24dp" />
+
+</RelativeLayout>
